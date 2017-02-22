@@ -1,8 +1,7 @@
-# Mercury: A WordPress P2 Child Theme.
+# Mercurius: A WordPress P2 Child Theme.
 
-Mercury is a modern and responsive child theme for [WordPress's P2](http://p2theme.com/). The planet Mercury was "named Mercurius by the Romans because it appears to move so swiftly," a little like P2.
+Mercurius is a modern and responsive child theme for [WordPress's P2](http://p2theme.com/). Mercurius, latin for Mercury, was how the romans named the planet "because it appears to move so swiftly," a little like P2. This is a fork of the [mercury child theme by Ryan Sommers](http://ryansommers.com/mercury).
 
-This is my first attempt at a child theme, and the first open source project I've worked on, so please be gentle!
 
 ## Core Template Changes
 * `header.php`
@@ -76,5 +75,5 @@ More updates for WordPress.org Theme Approval
 * `readme.md`
   - Updated with better styles.
 
-### Version 1.0.0
+### Version 1.0
 - Initial release.
