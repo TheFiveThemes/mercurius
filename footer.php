@@ -12,7 +12,7 @@
 <div id="footer">
 	<p>
 		<?php echo prologue_poweredby_link(); ?>
-		<?php printf( __( 'Theme: %1$s by %2$s.', 'Mercury' ), 'Mercury', '<a href="http://ryansommers.com/" rel="designer">Ryan Sommers</a>' ); ?>
+		<?php printf( __( 'Theme: %1$s by %2$s.', 'Mercurius' ), 'Mercurius', '<a href="https://github.com/TheFiveThemes/mercurius" rel="designer">Hugo Baeta</a>' ); ?>
 	</p>
 </div>
 

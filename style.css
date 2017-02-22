@@ -1,11 +1,11 @@
 /*
-Theme Name: Mercury
-Theme URI: http://ryansommers.com/mercury
-Description: Enjoy all of WordPress's P2 theme features like inline comments, a posting form right on the homepage, inline editing of posts and comments, real-time updates and more — now with a clean, modern and responsive layout.
-Author: Ryan Sommers
-Author URI: http://ryansommers.com/
+Theme Name: Mercurius
+Theme URI: https://github.com/TheFiveThemes/mercurius/
+Description: Mercurius is a modern and responsive child theme for WordPress's P2. Mercurius, latin for Mercury, was how the romans named the planet "because it appears to move so swiftly," a little like P2. This is a fork of the Mercury child theme by Ryan Sommers.
+Author: Hugo Baeta
+Author URI: http://hugobaeta.com
 Template: p2
-Version: 1.0.5
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, responsive-layout, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-header, custom-menu, post-formats, sticky-post, theme-options
@@ -40,11 +40,16 @@ a:hover {
 /* Font Overrides */
 body, form *, #respond #cancel-comment-reply-link, input, textarea, h1, h2, h3, #postbox label, #help dd, .inlineediting input.title {
 	color: #4b4a4a;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-weight: regular;
 }
-h1 {
-	font-weight: 300;
+h1, h2, #main .postcontent h2, h3 {
+	font-weight: bold;
+}
+#sidebar h2 {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 code, pre {
 	font-size: 13px;
@@ -121,14 +126,14 @@ input[type="submit"] {
 .textedit textarea {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	max-width: 100%;
 	height: auto;
 	width: 100%;
 	-webkit-appearance: none;
 }
 #postbox input#posttitle,
-#postbox textarea#posttext, 
+#postbox textarea#posttext,
 textarea.posttext,
 #postbox input#postcitation,
 #postbox input#tags,
@@ -142,9 +147,9 @@ textarea.posttext,
 	border-radius: 2px;
 	margin: 0 0 7px 0;
 }
-#wrapper button, 
+#wrapper button,
 #wrapper input[type="submit"],
-#searchform #searchsubmit 
+#searchform #searchsubmit
 #main .textedit input[type="submit"]{
 	background: #e9e3e3;
 	border: 0;
@@ -159,13 +164,13 @@ textarea.posttext,
 	line-height: 34px;
 	padding: 0 10px;
 }
-#wrapper button:hover, 
+#wrapper button:hover,
 #wrapper input[type="submit"]:hover,
 #searchform #searchsubmit:hover {
 	background: #3478e3;
 	color: #fff;
 }
-#postbox textarea#posttext:focus, 
+#postbox textarea#posttext:focus,
 #postbox input#tags:focus,
 textarea.posttext:focus {
 	border-color: #3478e3;
@@ -414,13 +419,11 @@ form#new_post {
 @media (min-width: 620px) {
 	#postbox div.avatar,
 	#postlist .post-avatar {
-		background: #e9e3e3;
-		border-radius: 999px 0 0 999px;
 		width: 62px;
 	}
 }
 #postbox div.avatar {
-	background: #e9e3e3;
+
 }
 #postlist .post-avatar {
 	margin: 0;
@@ -489,7 +492,7 @@ form#new_post {
 	#main #postlist .commentlist li.depth-1 > img.avatar {
 		margin-left: 0;
 	}
-} 
+}
 
 
 /* Main Content */
@@ -528,7 +531,7 @@ form#new_post {
 		float: right;
 		position: relative;
 		right: auto;
-		text-align: right; 
+		text-align: right;
 		top: auto;
 	}
 }
@@ -630,7 +633,7 @@ form#new_post {
 }
 
 /* Posts */
-#main ul#postlist, 
+#main ul#postlist,
 #main .post ul {
 	overflow: visible;
 }
@@ -707,11 +710,11 @@ form#new_post {
 #main .format-link .postcontent p a:hover {
 	color: #3478e3;
 }
-#main .postcontent blockquote p:first-child, 
+#main .postcontent blockquote p:first-child,
 #main .postcontent blockquote p:first-child {
 	padding: 12px 0;
 }
-.category-quote blockquote, 
+.category-quote blockquote,
 .format-quote blockquote {
 	background: #f6f1f1;
 	-webkit-border-radius: 0 0 2px 2px;
@@ -726,16 +729,16 @@ form#new_post {
 	position: relative;
 }
 @media (min-width: 620px) {
-	.category-quote blockquote, 
+	.category-quote blockquote,
 	.format-quote blockquote {
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
 	}
 }
-#main .category-quote blockquote p, 
+#main .category-quote blockquote p,
 #main .format-quote blockquote p,
-#main .category-quote blockquote p:first-child, 
+#main .category-quote blockquote p:first-child,
 #main .format-quote blockquote p:first-child {
 	background: transparent;
 	-webkit-border-radius: 0;
@@ -748,7 +751,7 @@ form#new_post {
 	margin: 0 0 1em 0;
 	padding: 0;
 }
-#main .category-quote blockquote:before, 
+#main .category-quote blockquote:before,
 #main .format-quote blockquote:before {
 	content: "“  ";
 	font-family: Georgia, "Times New Roman", serif;
@@ -761,7 +764,7 @@ form#new_post {
 #main .format-link .postcontent p a:hover {
 	border: 0 none;
 }
-.category-quote blockquote cite:before, 
+.category-quote blockquote cite:before,
 .format-quote blockquote cite:before {
 	content: "\2014  ";
 }
@@ -938,8 +941,8 @@ form#new_post {
 	background: #3478e3;
 	color: #fff;
 }
-#respond p.logged-in-as, 
-#respond p.must-log-in, 
+#respond p.logged-in-as,
+#respond p.must-log-in,
 #respond p.comment-notes {
 	float: none;
 	margin: 0;
