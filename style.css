@@ -840,7 +840,6 @@ form#new_post {
 	}
 }
 #main .inlinecomments p {
-	font-size: 13px;
 	padding: 0 0 1em 0;
 }
 @media (min-width: 620px) {
