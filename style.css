@@ -891,6 +891,9 @@ form#new_post {
 		margin: 0 0 0 64px;
 		padding: 20px 0 0 20px;
 	}
+	#main ul#postlist .commentlist .commentcontent ul li {
+		margin: 0;
+	}
 }
 #main #postlist .commentlist li.depth-1 {
 	margin: 0 0 0 20px;
